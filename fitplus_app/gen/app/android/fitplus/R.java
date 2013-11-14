@@ -28,17 +28,19 @@ public final class R {
     }
     public static final class id {
         public static final int action_settings=0x7f080005;
-        public static final int community_btn=0x7f080004;
         public static final int content_fragment=0x7f080001;
+        public static final int exerciseBtn=0x7f080002;
+        public static final int historyBtn=0x7f080003;
         public static final int menu_fragment=0x7f080000;
-        public static final int rival_btn=0x7f080002;
-        public static final int timeline_btn=0x7f080003;
+        public static final int myPageBtn=0x7f080004;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int fragment_layout=0x7f030001;
-        public static final int fragment_main=0x7f030002;
-        public static final int fragment_menu=0x7f030003;
+        public static final int fragment_history=0x7f030001;
+        public static final int fragment_layout=0x7f030002;
+        public static final int fragment_main=0x7f030003;
+        public static final int fragment_menu=0x7f030004;
+        public static final int fragment_mypage=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f070000;

@@ -5,21 +5,21 @@
     android:orientation="horizontal" >
 
     <ImageButton
-        android:id="@+id/rival_btn"    
+        android:id="@+id/exerciseBtn"    
         android:background="@drawable/btn1"
         android:layout_width="0dp" 
         android:layout_height="fill_parent"
         android:layout_weight="1" />
 
     <ImageButton
-        android:id="@+id/timeline_btn"
+        android:id="@+id/historyBtn"
         android:background="@drawable/btn2"
         android:layout_width="0dp" 
         android:layout_height="fill_parent"
         android:layout_weight="1" />
 
     <ImageButton
-        android:id="@+id/community_btn"
+        android:id="@+id/myPageBtn"
        	android:background="@drawable/btn3"
         android:layout_width="0dp" 
         android:layout_height="fill_parent"
