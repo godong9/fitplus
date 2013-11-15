@@ -28,8 +28,8 @@ public class MainActivity extends Activity {
 		
 		FragmentManager fm = getFragmentManager();
 	    FragmentTransaction tr = fm.beginTransaction();
-	    MainFragment mf = new MainFragment();
-	    tr.add(R.id.content_fragment, mf);
+	    ExerciseFragment ef = new ExerciseFragment();
+	    tr.add(R.id.content_fragment, ef);
 	    tr.commit();
 	    
 	    // 각 버튼마다 버튼 리스너 등록
@@ -65,8 +65,8 @@ public class MainActivity extends Activity {
 				historyBtn.setSelected(false);
 				myPageBtn.setSelected(false);	
 				
-				MainFragment mf = new MainFragment();	    
-			    tr.replace(R.id.content_fragment, mf);
+				ExerciseFragment ef = new ExerciseFragment();	    
+			    tr.replace(R.id.content_fragment, ef);
 			    tr.commit();
 			    
 			}	
