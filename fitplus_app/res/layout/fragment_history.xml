@@ -5,4 +5,35 @@
      android:layout_height="fill_parent"
      android:layout_gravity="center" >
     
+    <LinearLayout 
+        android:id="@+id/historyTypeLayout"
+		android:layout_weight ="10"
+		android:layout_width="match_parent"
+   		android:layout_height="0dp"
+   		android:orientation="horizontal" >
+   		<ImageButton
+	        android:id="@+id/historyTitleWeekBtn"    
+	        android:background="@drawable/history_title_week_btn"
+	        android:layout_width="0dp" 
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1" />
+   		<ImageButton
+	        android:id="@+id/historyTitleMonthBtn"    
+	        android:background="@drawable/history_title_month_btn"
+	        android:layout_width="0dp" 
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1" />
+   		<ImageButton
+	        android:id="@+id/historyTitleYearBtn"    
+	        android:background="@drawable/history_title_year_btn"
+	        android:layout_width="0dp" 
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1" />
+   	</LinearLayout>
+    <com.essence.chart.Chart
+        android:id="@+id/chart01"
+        android:layout_weight="90"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+    
 </LinearLayout>
