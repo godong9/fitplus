@@ -1,8 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-     android:orientation="vertical"
-     android:layout_width="fill_parent"
-     android:layout_height="fill_parent"
-     android:layout_gravity="center" >
-    
-</LinearLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ViewFlipper
+        android:id="@+id/page_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:id="@+id/select_counting_mode_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/guide_counting_mode" />
+
+            <Button
+                android:id="@+id/counting_mode_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/counting_mode_1" />
+
+            <Button
+                android:id="@+id/counting_mode_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/counting_mode_2" />
+
+            <Button
+                android:id="@+id/counting_mode_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/counting_mode_3" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/exercise_list_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/result_list_page"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </ListView>
+
+            <Button
+                android:id="@+id/result_reset_go_first_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/go_first_page" />
+
+            <Button
+                android:id="@+id/result_reset_go_second_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/go_second_page" />
+        </LinearLayout>
+
+    </ViewFlipper>
+
+</RelativeLayout>
